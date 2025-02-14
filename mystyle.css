@@ -1,0 +1,300 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(211, 206, 206);
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; 
+}
+
+section {
+    padding: 80px 20px;
+}
+
+/* Header Styles */
+.header {
+    background: rgb(211, 206, 206);
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); /* Creates a shadow effect */
+}
+
+/* Navigation Styles */
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: white;
+    background: #393a3a;
+    border-radius: 5px;
+}
+
+/* Profile & Bio Section */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 100px auto 50px;
+    padding: 20px;
+}
+
+/* Bio */
+.bio-container {
+    width: 50%;
+    text-align: left;
+}
+
+.myname {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.developer {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.bio {
+    font-size: 17px;
+    color: #0a0a0a;
+}
+
+/* Profile & Bio in About Section */
+.profile-container-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Bio on the Right */
+.bio-container-about {
+    width: 50%;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    padding-left: 20px;
+}
+
+/* Profile Images */
+.profile-img {
+    width: 420px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.social-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px; /* Adjust icon size */
+    color: gray;
+}
+.profile-img-about {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+.content-section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 120px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.skill-box {
+    background-color: rgb(211, 206, 206);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+.education-container {
+    display: flex;
+    justify-content: center; /* Centers the boxes */
+    align-items: center; /* Aligns them vertically */
+    gap: 20px; /* Space between the boxes */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-bottom:200px;
+}
+
+.high-school-box, .varsity-box {
+    background-color: rgb(211, 206, 206);
+    padding: 0px;
+    width: 700px; /* Adjust width */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    height: 150px;
+}
+
+.contact-box {
+    background-color: rgb(211, 206, 206);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width:800px;
+}
+
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill-box h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-box li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+
+/* Adjusting Projects Section */
+#projects {
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+/* Buttons */
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: gray;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: gray;
+}
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#backToTopBtn:hover {
+    background-color: gray;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 10px;
+    text-align: center;
+}
